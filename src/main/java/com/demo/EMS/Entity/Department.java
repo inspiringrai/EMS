@@ -1,4 +1,4 @@
-package com.demo.EMS.beans;
+package com.demo.EMS.Entity;
 
 
 import javax.persistence.*;

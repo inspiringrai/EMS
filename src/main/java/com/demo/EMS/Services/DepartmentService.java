@@ -1,9 +1,6 @@
 package com.demo.EMS.Services;
 
-import com.demo.EMS.Repository.DepartmentRepo;
-import com.demo.EMS.beans.Department;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.demo.EMS.Entity.Department;
 
 import java.util.List;
 

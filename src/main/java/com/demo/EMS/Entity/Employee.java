@@ -1,4 +1,4 @@
-package com.demo.EMS.beans;
+package com.demo.EMS.Entity;
 
 
 import com.sun.istack.NotNull;
@@ -14,7 +14,13 @@ public class Employee {
     @Id
     @Column(name="employee_id")
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    private long id;
+    private int id;
+
+    public Employee(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
 
     private String firstName;
     private String lastName;
@@ -27,7 +33,7 @@ public class Employee {
     public Employee() {
 
     }
-    public Employee(long id, String firstName, String lastName, String email,Department department) {
+    public Employee(int id, String firstName, String lastName, String email,Department department) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,7 +46,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

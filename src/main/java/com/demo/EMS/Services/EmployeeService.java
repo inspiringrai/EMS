@@ -1,6 +1,8 @@
 package com.demo.EMS.Services;
 
-import com.demo.EMS.beans.Employee;
+import com.demo.EMS.Entity.Employee;
+import com.demo.EMS.dto.AddEmployeeRequest;
+import com.demo.EMS.dto.UpdateEmployeeRequest;
 
 import java.util.List;
 
@@ -13,15 +15,15 @@ public interface EmployeeService {
     Employee getEmployee(int id);
 
     // inserting employee
-    void addEmployee(Employee e) ;
+    Employee addEmployee(AddEmployeeRequest e) ;
 
     // updating employee by id
-    void updateEmployee(Employee emp, int id);
+    Employee updateEmployee(UpdateEmployeeRequest emp, int id);
 
     // deleting all employees
-    void deleteAllEmployees();
+    int deleteAllEmployees();
 
     // deleting employee by id
-    void deleteEmployeeByID(int id);
+    boolean deleteEmployeeByID(int id);
 
 }

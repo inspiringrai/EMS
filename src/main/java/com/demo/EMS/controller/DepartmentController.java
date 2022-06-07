@@ -1,7 +1,7 @@
 package com.demo.EMS.controller;
 
 import com.demo.EMS.Services.DepartmentService;
-import com.demo.EMS.beans.Department;
+import com.demo.EMS.Entity.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
