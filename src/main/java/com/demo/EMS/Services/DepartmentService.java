@@ -26,8 +26,7 @@ public interface DepartmentService {
     // deleting department by id
     void deleteDepartmentByID(int id);
 
-    //patching/updating department by id
-    void patchDepartment(Department d, int id) ;
+
 
 
 }

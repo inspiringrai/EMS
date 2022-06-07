@@ -24,6 +24,4 @@ public interface EmployeeService {
     // deleting employee by id
     void deleteEmployeeByID(int id);
 
-    //patching/updating employee by id
-    void patchEmployee(Employee emp, int id);
 }
